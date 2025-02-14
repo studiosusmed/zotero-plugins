@@ -813,4 +813,49 @@ export const pluginsDev: PluginInfoBase[] = [
     ],
     tags: ['others'],
   },
+
+export const info: PluginInfo = {
+  /**
+   * Repository of tara plugin
+   * A Zotero add-on for backing up and restoring preferences, add-ons, translators, and styles
+   */
+  repo: "l0o0/tara",
+
+  /**
+   * Release configurations for different Zotero versions
+   * Current releases support both Zotero 7 and 6
+   */
+  releases: [
+    {
+      // Latest version compatible with Zotero 7
+      targetZoteroVersion: "7",
+      tagName: "v1.0.0-9"
+    },
+    {
+      // Previous version compatible with Zotero 6
+      targetZoteroVersion: "6",
+      tagName: "v1.0.0-8"
+    }
+  ]
+},
+export const info: PluginInfo = {
+  /**
+   * Repository of Zotero7-SciDB plugin
+   * A Zotero plugin that provides SciDB integration similar to zotero-scihub
+   */
+  repo: "0xc1c4da/zotero7-scidb",
+
+  /**
+   * Release configuration for Zotero 7
+   * Since this is specifically designed for Zotero 7 as indicated by the name,
+   * we'll configure it for Zotero 7 compatibility
+   */
+  releases: [
+    {
+      // Compatible with Zotero 7
+      targetZoteroVersion: "7",
+      tagName: "latest"
+    }
+  ]
+}
 ]
